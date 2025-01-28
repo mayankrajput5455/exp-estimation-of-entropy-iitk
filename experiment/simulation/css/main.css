@@ -1,1 +1,28 @@
-/* You CSS goes in here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+}
+.container{
+    height: 600px;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+}
+#mycanvas{
+    background-color: lightskyblue;
+}
+.instruction_h{
+    height: 600px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+}
+.instruction_h~ h2{
+    border: 2px solid black;
+    margin-top: 10px;
+    background-color: bisque;
+}
