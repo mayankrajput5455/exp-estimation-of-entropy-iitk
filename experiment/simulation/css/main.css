@@ -21,7 +21,7 @@ body{
     display: flex;
     justify-content: center;
 }
-.instruction_h~ h2{
+.instruction_h h2{
     border: 2px solid black;
     margin-top: 10px;
     background-color: bisque;
