@@ -1,28 +1,76 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins',sans-serif;
     box-sizing: border-box;
 }
 body{
-
+    background-color:#fff;
+    color: #111;
+    border: 1px solid black;
 }
-.container{
-    height: 600px;
-    width: 100%;
-    border: 2px solid black;
-    display: flex;
-}
-#mycanvas{
-    background-color: lightskyblue;
-}
-.instruction_h{
-    height: 600px;
-    width: 350px;
+.heading{
+    height: 9vh;
+    width: 99.9vw;
+    background-color:rgb(65, 96, 96);
     display: flex;
     justify-content: center;
+    align-items: center;
+    border: 1px solid black;
 }
-.instruction_h~ h2{
+.heading h1{
     border: 2px solid black;
-    margin-top: 10px;
-    background-color: bisque;
+    background-color:peru;
+}
+.container{
+    height: 90.7vh;
+    width: 99.9vw;
+    background-color:rosybrown;
+    display: flex;
+}
+.work{
+    height: 89vh;
+    width: 66vw;
+    position: relative;
+    /* display: flex; */
+    /* background-image: url("/experiment/simulation/images/background.png"); */
+    /* background-size: cover; */
+    /* background-position:center; */
+    margin-top: 1vh;
+    margin-left: 1vh;
+    border: 1px solid black;
+}
+.work #img1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.work #img2{
+    height: 19%;
+    width: 10%;
+    color: #fff;
+    position: absolute;
+    transform: translate(10rem,10rem);
+}
+.instruction_h{
+    background-color:rgb(65, 96, 96);
+    height: 89vh;
+    width: 33vw;
+    margin-top: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border: 1px solid black;
+}
+.instruction_h h2{
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    background-color: peru;
+}
+.instruction{
+    height: 75vh;
+    width: 27vw;
+    margin: auto;
+    margin-top: 5vh;
+    background-color:blanchedalmond;
 }
