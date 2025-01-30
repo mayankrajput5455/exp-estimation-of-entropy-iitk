@@ -46,11 +46,68 @@ body{
     position: absolute;
 }
 .work #img2{
-    height: 19%;
+    height: 22%;
     width: 10%;
     color: #fff;
+    background: transparent;
     position: absolute;
-    transform: translate(10rem,10rem);
+    transform: translate(18rem,11rem);
+}
+.work #img3{
+    height: 22%;
+    width: 10%;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(24rem,11rem);
+}
+.work #img4{
+    height: 22%;
+    width: 20%;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(38rem,11rem);
+}
+.work #img5{
+    height: 299.17;
+    width: 66.72;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(5rem,1rem);
+}
+.work #img6{
+    height: 209.41px;
+    width: 14.83px;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(7.2rem,1.3rem);
+}
+.work #img7{
+    height: 30%;
+    width: 10%;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(11rem,8.3rem);
+}
+.work #img8{
+    height: 30%;
+    width: 5%;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(32rem,8.3rem);
+}
+.work #img9{
+    height: 20%;
+    width: 15%;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(32rem,16rem);
 }
 .instruction_h{
     background-color:rgb(65, 96, 96);
@@ -72,5 +129,19 @@ body{
     width: 27vw;
     margin: auto;
     margin-top: 5vh;
+    color: #111;
     background-color:blanchedalmond;
 }
+=======
+.instruction_h h2{
+    border: 2px solid black;
+    margin-top: 10px;
+    background-color: bisque;
+}
+.img-div h2{
+    border: 1px solid black;
+    background-color: #fff;
+    color: #111;
+}
+>>>>>>> d76c30509274889a631efa1e464ab78ce1362656
+
