@@ -37,7 +37,7 @@ body{
     /* background-size: cover; */
     /* background-position:center; */
     margin-top: 1vh;
-    margin-left: 1vh;
+    margin-left: 1vw;
     border: 1px solid black;
 }
 .work #img1{
@@ -51,15 +51,12 @@ body{
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(18rem,11rem);
+    transform: translate(22.5rem,11rem);
 }
 .work #img3{
-    height: 22%;
-    width: 10%;
-    color: #fff;
-    background: transparent;
+    height: 100%;
+    width: 100%;
     position: absolute;
-    transform: translate(24rem,11rem);
 }
 .work #img4{
     height: 22%;
@@ -67,7 +64,7 @@ body{
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(38rem,11rem);
+    transform: translate(36rem,11rem);
 }
 .work #img5{
     height: 299.17;
@@ -75,7 +72,7 @@ body{
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(5rem,1rem);
+    transform: translate(7rem,0.8rem);
 }
 .work #img6{
     height: 209.41px;
@@ -83,7 +80,7 @@ body{
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(7.2rem,1.3rem);
+    transform: translate(9.2rem,1.1rem);
 }
 .work #img7{
     height: 30%;
@@ -91,7 +88,7 @@ body{
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(11rem,8.3rem);
+    transform: translate(15rem,8.3rem);
 }
 .work #img8{
     height: 30%;
@@ -99,7 +96,7 @@ body{
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(32rem,8.3rem);
+    transform: translate(31rem,8.3rem);
 }
 .work #img9{
     height: 20%;
@@ -107,41 +104,44 @@ body{
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(32rem,16rem);
+    transform: translate(30rem,16rem);
 }
 .instruction_h{
     background-color:rgb(65, 96, 96);
     height: 89vh;
-    width: 33vw;
+    width: 31vw;
     margin-top: 1vh;
-    margin-left: 1vw;
+    margin-left: 0.9vw;
     margin-right: 1vw;
     border: 1px solid black;
 }
-.instruction_h h2{
-    display: flex;
-    justify-content: center;
-    border: 2px solid black;
+.instruction_h h1{
     background-color: peru;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+    border: 1px solid black;
 }
 .instruction{
-    height: 75vh;
-    width: 27vw;
+    height: 60vh;
+    width: 25vw;
     margin: auto;
     margin-top: 5vh;
     color: #111;
-    background-color:blanchedalmond;
 }
-=======
-.instruction_h h2{
-    border: 2px solid black;
-    margin-top: 10px;
-    background-color: bisque;
+.instruction h2{
+    text-align: center;
+    /* border: 1px solid black; */
+    margin-top: 3rem;
 }
-.img-div h2{
+#start{
+    height: 1.4rem;
+    width: 4rem;
     border: 1px solid black;
-    background-color: #fff;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color:pink;
     color: #111;
+    transform: translate(45rem,30.5rem);
 }
->>>>>>> d76c30509274889a631efa1e464ab78ce1362656
-
