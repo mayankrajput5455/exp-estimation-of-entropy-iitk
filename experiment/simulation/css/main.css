@@ -47,11 +47,11 @@ body{
 }
 .work #img2{
     height: 22%;
-    width: 10%;
+    width: 8%;
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(22.5rem,11rem);
+    transform: translate(25rem,9.8rem);
 }
 .work #img3{
     height: 100%;
@@ -64,7 +64,7 @@ body{
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(36rem,11rem);
+    transform: translate(39.6rem,12rem);
 }
 .work #img5{
     height: 299.17;
@@ -72,7 +72,7 @@ body{
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(7rem,0.8rem);
+    transform: translate(7rem,0rem);
 }
 .work #img6{
     height: 209.41px;
@@ -80,15 +80,15 @@ body{
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(9.2rem,1.1rem);
+    transform: translate(8.8rem,0rem);
 }
 .work #img7{
-    height: 30%;
-    width: 10%;
+    height: 20%;
+    width: auto;
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(15rem,8.3rem);
+    transform: translate(15rem,10.5rem);
 }
 .work #img8{
     height: 30%;
@@ -96,7 +96,7 @@ body{
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(31rem,8.3rem);
+    transform: translate(18rem,7.3rem);
 }
 .work #img9{
     height: 20%;
@@ -104,9 +104,118 @@ body{
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(30rem,16rem);
+    transform: translate(17rem,15rem);
 }
-.instruction_h{
+.work #img10{
+    height: 12%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(24rem,15rem);
+}
+.work #img11{
+    height: 299.17px;
+    width: 66.72;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(10rem,5rem);
+}
+.work #img12{
+    height: 209.41px;
+    width: 14.83px;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(12.4rem,3rem);
+}
+.work #img13{
+    height: 22%;
+    width: 8%;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    left: 20rem;
+    top: 17rem;
+    transition: all 2s ease-in-out;
+    transform-origin: top left;
+}
+.work #img14{
+    height: 30%;
+    width: 5%;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    left: 29rem;
+    top: 14.3rem;
+    transition: all 2s ease-in-out;
+    transform-origin: top left;
+}
+.work #img15{
+    height: 30%;
+    width: 9%;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(33rem,7rem);
+}
+.work #img16{
+    height: 20%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(19.5rem,10.7rem);
+}
+.work #img17{
+    height: 20%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    left: 40rem;
+    top: 17.2rem;
+    transition: all 2s ease-in-out;
+    transform-origin: top left;
+}
+.work #img18{
+    height: 10%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    left: 35rem;
+    top: 20.3rem;
+}
+.work #img19{
+    height: 20%;
+    width: 15%;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    left: 37rem;
+    top: 22rem;
+    transition: all 2s ease-in-out;
+    transform-origin: top left;
+}
+.work #img20{
+    height: 12%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(29rem,15.5rem);
+}
+.work #img21{
+    height: 25%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(24rem,9rem);
+}
+.message{
     background-color:rgb(65, 96, 96);
     height: 89vh;
     width: 31vw;
@@ -115,7 +224,7 @@ body{
     margin-right: 1vw;
     border: 1px solid black;
 }
-.instruction_h h1{
+message h1{
     background-color: peru;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -123,19 +232,29 @@ body{
     text-align: center;
     border: 1px solid black;
 }
-.instruction{
-    height: 60vh;
-    width: 25vw;
+#ins{
     margin: auto;
     margin-top: 5vh;
     color: #111;
-}
-.instruction h2{
     text-align: center;
-    /* border: 1px solid black; */
+    font-style:normal;
+    text-decoration: underline;
+}
+#text{
+    text-align: center;
+    font-size: 2.0vw;
+    font-weight: 100;
+    color: orange;
     margin-top: 3rem;
 }
-#start{
+#text2{
+    text-align: center;
+    font-size: 2.0vw;
+    font-weight: 100;
+    color: orange;
+    margin-top: 3rem;
+}
+.start{
     height: 1.4rem;
     width: 4rem;
     border: 1px solid black;
@@ -143,5 +262,18 @@ body{
     font-size: 1rem;
     background-color:pink;
     color: #111;
-    transform: translate(45rem,30.5rem);
+    transform: translate(42rem,30.5rem); 
+}
+.start a{
+    text-decoration: none;
+}
+#next{
+    height: 1.4rem;
+    width: 4rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color:pink;
+    color: #111;
+    transform: translate(43.6rem,30.5rem); 
 }
