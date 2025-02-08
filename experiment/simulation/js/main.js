@@ -18,16 +18,24 @@ srt.addEventListener("load",()=>{
     speak(txt2.innerText);
 });
 
+// Na2co3 to measuring Cylinder
 
 function pourbyNa2co3() {
     let bottle = document.getElementById("img17");
+    let msg = document.getElementById("text2");
 
-    bottle.style.transform = "translateX(-170px) translateY(-70px) rotate(-40deg)";
+    bottle.style.transform = "translateX(-167px) translateY(-30px) rotate(-40deg)";
 
     setTimeout(() =>{
         bottle.style.transform = "translateX(0) translateY(0) rotate(0deg)";
     },3000);
+    setTimeout(() =>{
+        msg.innerText="";
+    },3000);
+    msg.innerText="";
 }
+// Measuring Cylinder to flask
+
 function pourbymeasuringCylinder(){
     let cylinder = document.getElementById("img14");
 
@@ -37,20 +45,26 @@ function pourbymeasuringCylinder(){
         cylinder.style.transform = "translateX(0) translateY(0) rotate(0deg)";
     },3000);
 }
+// Pippet to indicator
+
 function pourbymicropippet(){
     let pippet = document.getElementById("img19");
     
-    pippet.style.transform = "translateX(-70px) translateY(-30px) rotate(-70deg)";
+    pippet.style.transform = "translateX(-40px) translateY(-40px) rotate(-90deg)";
 }
+//Indicator to flask by micropippet
+
 function pouronflask(){
     let pippet2 = document.getElementById("img19");
 
-    pippet2.style.transform = "translateX(-290px) translateY(-70px) rotate(-90deg)";
+    pippet2.style.transform = "translateX(-260px) translateY(-90px) rotate(-90deg)";
 
     setTimeout(() =>{
         pippet2.style.transform = "translateX(0) translateY(0) rotate(0deg)";
     },3000);
+
 }
+// Flask going to burrete
 function burreteStart(){
     let flask = document.getElementById("img13");
 
