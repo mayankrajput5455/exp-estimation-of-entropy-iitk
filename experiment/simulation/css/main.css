@@ -25,19 +25,19 @@ body{
 .container{
     height: 90.7vh;
     width: 99.9vw;
-    background-color:rosybrown;
+    background-color:darkgray;
     display: flex;
 }
 .work{
     height: 89vh;
-    width: 66vw;
+    width: 80vw;
     position: relative;
     /* display: flex; */
     /* background-image: url("/experiment/simulation/images/background.png"); */
     /* background-size: cover; */
     /* background-position:center; */
     margin-top: 1vh;
-    margin-left: 1vw;
+    margin-left: 3px;
     border: 1px solid black;
 }
 .work #img1{
@@ -141,6 +141,16 @@ body{
     transition: all 2s ease-in-out;
     transform-origin: top left;
 }
+.shake{
+    animation: shake 0.3s infinite linear forwards;
+}
+@keyframes shake {
+    0% { transform: translateX(-138px) translateY(-7px) rotate(0deg); }
+    25% { transform: translateX(-138px) translateY(-7px) rotate(-2deg); }
+    50% { transform: translateX(-138px) translateY(-7px) rotate(2deg); }
+    75% { transform: translateX(-138px) translateY(-7px) rotate(-2deg); }
+    100% { transform: translateX(-138px) translateY(-7px) rotate(0deg); }
+}
 .work #img14{
     height: 30%;
     width: auto;
@@ -153,12 +163,12 @@ body{
     transform-origin: top left;
 }
 .work #img15{
-    height: 30%;
-    width: 9%;
+    height: 25%;
+    width: auto;
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(33rem,7rem);
+    transform: translate(32.4rem,8.6rem);
 }
 .work #img16{
     height: 20%;
@@ -215,43 +225,171 @@ body{
     position: absolute;
     transform: translate(24rem,9rem);
 }
+.work #img22{
+    height: 20%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    top: 17rem;
+    left: 16rem;
+    transition: all 2s ease-in-out;
+    transform-origin: top left;
+}
+.work #img23{
+    height: 22%;
+    width: 20%;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(41rem,17rem);
+}
+.work #img24{
+    height: 299.17;
+    width: 66.72;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(7rem,5.5rem);
+}
+.work #img25{
+    height: 209.41px;
+    width: 14.83px;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(8.8rem,3rem);
+}
+.work #img26{
+    height: 30%;
+    width: 5%;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    top: 13.7rem;
+    left: 21.5rem;
+    transition: all 2s ease-in-out;
+    transform-origin: top left;
+}
+.work #img27{
+    height: 7%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    top: 23rem;
+    left: 23rem;
+    transition: all 2s ease-in-out;
+    transform-origin: top left;
+
+}
+.work #img28{
+    height: 12%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(24rem,18.5rem);
+}
+.work #img29{
+    height: 12%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    top: 20.3rem;
+    left: 30.5rem;
+    transition: all 2s ease-in-out;
+    transform-origin: top left;
+}
+.work #img30{
+    height: 25%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    top: 15.5rem;
+    left: 35rem;
+    transition: all 2s ease-in-out;
+    transform-origin: top left;
+}
+.water{
+    width: 10px;
+    height: 0;
+    background: lightblue;
+    position: absolute;
+    left: 29.4rem;
+    top: 22.5rem;
+    display: none;
+}
+.pour{
+    animation: pourWater 2s linear forwards;
+}
+@keyframes pourWater {
+    from {
+        height: 0;
+    }
+    to {
+        height: 70px;
+    }
+}
 .container2{
     height: 88.8vh;
-    width: 31vw;
+    width: 35vw;
     border: 1px solid black;
     margin-top: 6.8px;
-    margin-left: 10px;
+    margin-left: 5px;
 }
-.message{
-    height: 44.1vh;
-    width: 30.9vw;
+.msg{
+    height: 44.4vh;
+    width: 32vw;
     background-color: grey;
+    border: 1px solid black;
+}
+#message{
+    height: 100%;
+    width: 30vw;
+    background-color: grey;
+    padding-top: 2px;
 }
 .starter{
     height: 44.4vh;
-    width: 30.9vw;
-    background-color:darkslategrey;
+    width: 31.79vw;
+    background-color:wheat;
     position: absolute;
     bottom: 0.38rem;
+    padding-top: 15px;
     display:grid;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    text-align: center;
 }
 #hcl-std{
     height: 2rem;
     width: 10rem;
-    margin-top: 3rem;
+    margin-top: 4rem;
     text-decoration: none;
     border: 1px solid black;
     border-radius: 10px;
+    background-color:thistle;
+    transform: translate(6rem,-3rem);
 }
+#hcl-std a{
+    text-decoration: none;
+}
+
 #main-exp{
     height: 2rem;
     width: 10rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     text-decoration: none;
     border: 1px solid black;
     border-radius: 10px;
+    background-color: thistle;
+    transform: translate(6rem,0rem);
+}
+#main-exp a{
+    text-decoration: none;
 }
 #ins{
     margin: auto;
@@ -272,21 +410,8 @@ body{
     text-align: center;
     font-size: 2.0vw;
     font-weight: 100;
-    color: orange;
+    color: tan;
     margin-top: 3rem;
-}
-.start{
-    height: 1.4rem;
-    width: 4rem;
-    border: 1px solid black;
-    border-radius: 10px;
-    font-size: 1rem;
-    background-color:pink;
-    color: #111;
-    transform: translate(42rem,30.5rem); 
-}
-.start a{
-    text-decoration: none;
 }
 #next{
     height: 1.4rem;
@@ -297,4 +422,7 @@ body{
     background-color:pink;
     color: #111;
     transform: translate(43.6rem,30.5rem);
+}
+#next a{
+    text-decoration: none;
 }
