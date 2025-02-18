@@ -141,8 +141,8 @@ body{
     transition: all 2s ease-in-out;
     transform-origin: top left;
 }
-.shake{
-    animation: shake 0.3s infinite linear forwards;
+.shake {
+    animation: shake 0.5s infinite linear alternate;
 }
 @keyframes shake {
     0% { transform: translateX(-138px) translateY(-7px) rotate(0deg); }
@@ -236,6 +236,18 @@ body{
     transition: all 2s ease-in-out;
     transform-origin: top left;
 }
+@keyframes shake2 {
+    0% { transform: translateX(0) rotate(0deg); }
+    25% { transform: translateX(-2px) rotate(-2deg); }
+    50% { transform: translateX(2px) rotate(2deg); }
+    75% { transform: translateX(-2px) rotate(-2deg); }
+    100% { transform: translateX(0) rotate(0deg); }
+}
+
+.shake2 {
+    animation: shake2 0.5s infinite linear alternate;
+}
+
 .work #img23{
     height: 22%;
     width: 20%;
@@ -426,3 +438,27 @@ body{
 #next a{
     text-decoration: none;
 }
+.bottle-container {
+    position: relative;
+    width: 200px; /* Adjust as per your image */
+  }
+
+  .bottle {
+    width: 100%;
+    display: block;
+  }
+
+  .water {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 255, 0.5);
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+    animation: fill 5s linear forwards;
+  }
+
+  @keyframes fill {
+    0% { height: 0; }
+    100% { height: 80%; } /* Adjust based on bottle */
+  }
