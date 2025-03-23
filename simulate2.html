@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Virtual Lab</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<div class="heading">
+		<h1>Estimation of entropy and free energy change of a reaction</h1>
+	</div>
+	<div class="container">
+		<div class="work">
+			<img id="img3" src="/images/bg2.png">
+			<!-- <button title="Temperature Bath"><img id="img23" src="/experiment/simulation/images/Temp_Bath.png"></button> -->
+			<button title="Temperature Bath">
+				<div><img id="img23" src="/images/Temp_Bath.png">
+				<div class="temp"></div>
+				</div>
+			</button>
+			<button title="Conical Flask"><img id="img22" onclick="goingtobath()" src="/images/conical flask.png"></button>
+			<button title="Titration Flask"><img id="img31" onclick="goingfortitration2()" src="/images/conical flask.png"></button>
+			<button title="Burette"><img id="img24" src="/images/burette stand.png"></button>
+			<button title="Burette"><img id="img25" src="/images/ff0.png"></button>
+			<button title="Measuring Cylinder">
+				<div>
+					<img id="img26" onclick="pourbycylinder()" src="/images/measuring-cylinder.png">
+					<div class="water" id="waterlevel"></div>
+				</div>
+			</button>
+			<button title="MicroPippet">
+				<div>
+					<img id="img27" onclick="gathersolution()" src="/images/micropippet.png">
+				</div>
+			</button>
+			<button title="MicroPippet"><img id="img32" onclick="gatherBcg()" src="/images/micropippet.png"></button>
+			<button title="Bromo Cresol Green Indicator"><img id="img28" src="/images/indicator.png"></button>
+			<button title="Borax"><img id="img29" onclick="pourborax()" src="/images/Borax.png"></button>
+			<button title="Distilled Water">
+				<div>
+					<img id="img30" onclick="pourwater()" src="/images/DistilledWater.png">
+					<div class="water" id="waterlevel"></div>
+				</div>
+			</button>
+			
+        </div>
+		<div class="container2">
+			<div class="message" id="message">
+				<h1 id="ins">INSTRUCTION</h1>
+				<h1 id="text2">To start the main experiment <br>First Click on Plate of Borax powder To pour 25g of Borax Powder into the flask.</h1>	
+				<div class="tempSetter">
+					<div>
+						<h3>Set Temperature</h3>
+						<button onclick="temp1()">Temp 20<sup>o</sup>C</button>
+					</div>
+					<div>
+						<button onclick="temp2()">Temp 30<sup>o</sup>C</button>
+					</div>
+					<div>
+						<button onclick="temp3()">Temp 40<sup>o</sup>C</button>
+					</div>
+					<div>
+						<button onclick="temp4()">Temp 50<sup>o</sup>C</button>
+					</div>
+					<div>
+						<button onclick="temp5()">Temp 60<sup>o</sup>C</button>
+					</div>
+				</div>		
+			</div>
+		</div>
+    </div>
+	<script src="./js/main.js"></script>
+</body>
+</html>
