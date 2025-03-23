@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color:#fff;
+    color: #111;
+    border: 1px solid black;
+}
+.heading{
+    height: 9vh;
+    width: 99.9vw;
+    background-color:rgb(65, 96, 96);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.heading h1{
+    border: 2px solid black;
+    background-color:peru;
+}
+.container{
+    height: 90.7vh;
+    width: 99.9vw;
+    background-color:darkgray;
+    display: flex;
+}
+.work{
+    height: 89vh;
+    width: 80vw;
+    position: relative;
+    /* display: flex; */
+    /* background-image: url("/experiment/simulation/images/background.png"); */
+    /* background-size: cover; */
+    /* background-position:center; */
+    margin-top: 1vh;
+    margin-left: 3px;
+    border: 1px solid black;
+}
+.work #img1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.work #img2{
+    height: 22%;
+    width: 8%;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(25rem,9.8rem);
+}
+.work #img3{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.work #img4{
+    height: 22%;
+    width: 20%;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(39.6rem,10rem);
+}
+.work #img5{
+    height: 299.17;
+    width: 66.72;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(6rem,0rem);
+}
+.work #img6{
+    height: 209.41px;
+    width: 14.83px;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(7.8rem,0rem);
+}
+.work #img7{
+    height: 20%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(14rem,10.5rem);
+}
+.work #img8{
+    height: 30%;
+    width: 5%;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(17rem,7.3rem);
+}
+.work #img9{
+    height: 7%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(14rem,16.5rem);
+}
+.work #img10{
+    height: 12%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(23rem,15rem);
+}
+.work #img11{
+    height: 299.17px;
+    width: 66.72;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(10rem,5rem);
+}
+.work #img12{
+    height: 209.41px;
+    width: 14.83px;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(12.4rem,3rem);
+}
+.work #img13 {
+    height: 22%;
+    width: 8%;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    left: 20rem;
+    top: 17.1rem;
+    transition: transform 2s ease-in-out;
+    transform-origin: top left;
+    transform: translateX(0) translateY(0);
+}
+
+.shake {
+    animation: shake 0.5s infinite linear alternate;
+}
+@keyframes shake {
+    0% { transform: translateX(-138px) translateY(-7px) rotate(0deg); }
+    25% { transform: translateX(-138px) translateY(-7px) rotate(-2deg); }
+    50% { transform: translateX(-138px) translateY(-7px) rotate(2deg); }
+    75% { transform: translateX(-138px) translateY(-7px) rotate(-2deg); }
+    100% { transform: translateX(-138px) translateY(-7px) rotate(0deg); }
+}
+.work #img14{
+    height: 30%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    left: 27rem;
+    top: 15.5rem;
+    transition: all 2s ease-in-out;
+    transform-origin: top left;
+}
+.work #img15{
+    height: 25%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(31rem,8.9rem);
+}
+.work #img16{
+    height: 20%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(18.5rem,10.7rem);
+}
+.work #img17{
+    height: 20%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    left: 40rem;
+    top: 18rem;
+    transition: all 2s ease-in-out;
+    transform-origin: top left;
+}
+.work #img18{
+    height: 10%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    left: 35rem;
+    top: 21.1rem;
+}
+.work #img19{
+    height: 7%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    left: 37rem;
+    top: 24rem;
+    transition: all 2s ease-in-out;
+    transform-origin: top left;
+}
+.work #img20{
+    height: 12%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(25rem,16rem);
+}
+.work #img21{
+    height: 25%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(23rem,9rem);
+}
+.work #img22{
+    height: 20%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    top: 17rem;
+    left: 17rem;
+    transition: all 2s ease-in-out;
+    transform-origin: top left;
+}
+@keyframes shake2 {
+    0% { transform: translateX(0) rotate(0deg); }
+    25% { transform: translateX(-2px) rotate(-2deg); }
+    50% { transform: translateX(2px) rotate(2deg); }
+    75% { transform: translateX(-2px) rotate(-2deg); }
+    100% { transform: translateX(0) rotate(0deg); }
+}
+
+.shake2 {
+    animation: shake2 0.5s infinite linear alternate;
+}
+
+.work #img23{
+    height: 22%;
+    width: 20%;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(40rem,15.6rem);
+}
+.temp{
+    height: 15px;
+    width: 25px;
+    background-color: rgba(255, 166, 0, 0.819);
+    position: absolute;
+    top: 21.5rem;
+    left: 47.5rem;
+}
+.work #img24{
+    height: 299.17;
+    width: 66.72;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(4rem,5.5rem);
+}
+.work #img25{
+    height: 209.41px;
+    width: 14.83px;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(5.8rem,3rem);
+}
+.work #img26{
+    height: 30%;
+    width: 5%;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    top: 13.7rem;
+    left: 22.5rem;
+    transition: all 2s ease-in-out;
+    transform-origin: top left;
+}
+.work #img27{
+    height: 7%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    top: 23rem;
+    left: 23rem;
+    transition: all 2s ease-in-out;
+    transform-origin: top left;
+}
+.work #img28{
+    height: 12%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(24rem,18.5rem);
+}
+.work #img29{
+    height: 12%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    top: 20.3rem;
+    left: 30.5rem;
+    transition: all 2s ease-in-out;
+    transform-origin: top left;
+}
+.work #img30{
+    height: 25%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    top: 15.5rem;
+    left: 34rem;
+    transition: all 2s ease-in-out;
+    transform-origin: top left;
+}
+.work #img31{
+    height: 20%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    top: 17rem;
+    left: 11.5rem;
+    transition: all 2s ease-in-out;
+    transform-origin: top left;
+}
+.shake3 {
+    animation: shake3 0.5s infinite linear alternate;
+}
+@keyframes shake3 {
+    0% { transform: translateX(-75px) translateY(-15px) rotate(0deg); }
+    25% { transform: translateX(-75px) translateY(-15px) rotate(-2deg); }
+    50% { transform: translateX(-75px) translateY(-15px) rotate(2deg); }
+    75% { transform: translateX(-75px) translateY(-15px) rotate(-2deg); }
+    100% { transform: translateX(-75px) translateY(-15px) rotate(0deg); }
+}
+.work #img32{
+    height: 7%;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    top: 24.3rem;
+    left: 28rem;
+    transition: all 2s ease-in-out;
+    transform-origin: top left;
+}
+.water {
+    width: 100%;
+    height: 0;
+    background: blue;
+    position: absolute;
+    bottom: 0;
+    transition: height 3s ease;
+}
+
+.container2{
+    height: 88.8vh;
+    width: 35vw;
+    border: 1px solid black;
+    margin-top: 6.8px;
+    margin-left: 5px;
+}
+.msg{
+    height: 44.4vh;
+    width: 32vw;
+    background-color: grey;
+    border: 1px solid black;
+}
+#message{
+    height: 100%;
+    width: 30vw;
+    background-color: grey;
+    padding-top: 2px;
+}
+.starter{
+    height: 44.4vh;
+    width: 31.79vw;
+    background-color:wheat;
+    position: absolute;
+    bottom: 0.38rem;
+    padding-top: 15px;
+    display:grid;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+#hcl-std{
+    height: 2rem;
+    width: 10rem;
+    margin-top: 4rem;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:thistle;
+    transform: translate(6rem,-3rem);
+}
+#hcl-std a{
+    text-decoration: none;
+}
+
+#main-exp{
+    height: 2rem;
+    width: 10rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: thistle;
+    transform: translate(6rem,0rem);
+}
+#main-exp a{
+    text-decoration: none;
+}
+#ins{
+    margin: auto;
+    /* margin-top: 5vh; */
+    color: #111;
+    text-align: center;
+    font-style:normal;
+    text-decoration: underline;
+}
+#text{
+    text-align: center;
+    font-size: 2.0vw;
+    font-weight: 100;
+    color:tan;
+    margin-top: 3rem;
+}
+#text2{
+    text-align: center;
+    font-size: 2.0vw;
+    font-weight: 100;
+    color: tan;
+    margin-top: 3rem;
+}
+#next{
+    height: 1.4rem;
+    width: 4rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color:pink;
+    color: #111;
+    transform: translate(43.6rem,30.5rem);
+}
+#next a{
+    text-decoration: none;
+}
+.tempSetter{
+    height: 17rem;
+    width: 15rem;
+    /* background-color: #fff; */
+    font-size: 1.4rem;
+    text-align: center;
+    position: absolute;
+    left: 60rem;
+    top: 19rem;
+    visibility: hidden;
+}
+.tempSetter button{
+    display: inline-block;
+    height: 2rem;
+    width: 5rem;
+    margin: 4px;
+    border-radius: 10px;
+    background-color: aqua;
+}
