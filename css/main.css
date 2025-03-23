@@ -40,9 +40,13 @@ body{
     margin-left: 3px;
     border: 1px solid black;
 }
+.work img{
+    max-width: 100%;
+    height: auto;
+}
 .work #img1{
     height: 100%;
-    max-width: 100%;
+    width: 100%;
     position: absolute;
 }
 .work #img2{
