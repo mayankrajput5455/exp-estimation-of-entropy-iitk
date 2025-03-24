@@ -21,7 +21,7 @@ function pourbyNa2co3() {
     let bottle = document.getElementById("img17");
     let msg = document.getElementById("text2");
 
-    bottle.style.transform = "translateX(-170px) translateY(-25px) rotate(-50deg)";
+    bottle.style.transform = "translateX(-175px) translateY(-22px) rotate(-70deg)";
     msg.innerText = "Pouring Na2CO3 into Measuring Cylinder...";
 
     setTimeout(() => {
@@ -56,14 +56,14 @@ function pourbymicropippet() {
     let pipette = document.getElementById("img19");
     let msg = document.getElementById("text2");
 
-    pipette.style.transform = "translateX(-40px) translateY(-40px) rotate(-90deg)";
+    pipette.style.transform = "translateX(-52px) translateY(-40px) rotate(-90deg)";
     msg.innerText = "Gathering indicator...";
     setTimeout(()=>{
         msg.innerText = "Click Again on micropippet to release 3 drops of Bromo Cresol Green into the Flask.";
     },1700)
     pipette.addEventListener("click",()=>{
         setTimeout(() => {
-            pipette.style.transform = "translateX(-260px) translateY(-85px) rotate(-90deg)";
+            pipette.style.transform = "translateX(-270px) translateY(-85px) rotate(-90deg)";
             msg.innerText = "Click Again on micropippet to release 3 drops of Bromo Cresol Green into the Flask.";
             
             setTimeout(() => {

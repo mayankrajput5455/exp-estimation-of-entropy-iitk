@@ -112,29 +112,29 @@ body{
     transform: translate(28.5vw,40vh);
 }
 .work #img11{
-    height: 299.17px;
-    width: 66.72;
+    height: 53vh;
+    width: 7vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(10rem,5rem);
+    transform: translate(12.8vw,12vh);
 }
 .work #img12{
-    height: 209.41px;
-    width: 14.83px;
+    height: 40vh;
+    width: 1.2vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(12.4rem,3rem);
+    transform: translate(15.5vw,5vh);
 }
 .work #img13 {
-    height: 22%;
-    width: 8%;
+    height: 19.5vh;
+    width: 5.5vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    left: 20rem;
-    top: 17.1rem;
+    left: 25vw;
+    top: 47vh;
     transition: transform 2s ease-in-out;
     transform-origin: top left;
     transform: translateX(0) translateY(0);
@@ -151,15 +151,16 @@ body{
     100% { transform: translateX(-138px) translateY(-7px) rotate(0deg); }
 }
 .work #img14{
-    height: 30%;
-    width: auto;
+    height: 27vh;
+    width: 6.5vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    left: 27rem;
-    top: 15.5rem;
-    transition: all 2s ease-in-out;
+    left: 33.5vw;
+    top: 42vh;
+    transition: transform 2s ease-in-out;
     transform-origin: top left;
+    transform: translateX(0) translateY(0);
 }
 .work #img15{
     height: 23vh;
@@ -178,35 +179,37 @@ body{
     transform: translate(22.7vw,26.5vh);
 }
 .work #img17{
-    height: 20%;
-    width: auto;
+    height: 18.5vh;
+    width: 5.5vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    left: 40rem;
-    top: 18rem;
-    transition: all 2s ease-in-out;
+    left: 50vw;
+    top: 48.5vh;
+    transition: transform 2s ease-in-out;
     transform-origin: top left;
+    transform: translateX(0) translateY(0);
 }
 .work #img18{
-    height: 10%;
-    width: auto;
+    height: 10vh;
+    width: 2.3vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    left: 35rem;
-    top: 21.1rem;
+    left: 43.7vw;
+    top: 57.1vh;
 }
 .work #img19{
-    height: 7%;
-    width: auto;
+    height: 5.5vh;
+    width: 10vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    left: 37rem;
-    top: 24rem;
-    transition: all 2s ease-in-out;
+    left: 47.5vw;
+    top: 66vh;
+    transition: transform 2s ease-in-out;
     transform-origin: top left;
+    transform: translateX(0) translateY(0);
 }
 .work #img20{
     height: 10vh;
