@@ -32,18 +32,11 @@ body{
     height: 89vh;
     width: 80vw;
     position: relative;
-    /* display: flex; */
-    /* background-image: url("/experiment/simulation/images/background.png"); */
-    /* background-size: cover; */
-    /* background-position:center; */
     margin-top: 1vh;
     margin-left: 3px;
     border: 1px solid black;
 }
-.work img{
-    max-width: 100%;
-    height: auto;
-}
+
 .work #img1{
     height: 100%;
     width: 100%;
@@ -63,60 +56,60 @@ body{
     position: absolute;
 }
 .work #img4{
-    height: 22%;
-    width: 20%;
+    height: 20vh;
+    width: 13vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(39.6rem,10rem);
+    transform: translate(49vw,27vh);
 }
 .work #img5{
-    height: 299.17;
-    width: 66.72;
+    height: 45vh;
+    width: 6.6vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(6rem,0rem);
+    transform: translate(7vw,1vh);
 }
 .work #img6{
-    height: 209.41px;
-    width: 14.83px;
+    height: 40vh;
+    width: 1.2vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(7.8rem,0rem);
+    transform: translate(9.2vw,-1vh);
 }
 .work #img7{
-    height: 20%;
-    width: auto;
+    height: 20vh;
+    width: 5vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(14rem,10.5rem);
+    transform: translate(17vw,27vh);
 }
 .work #img8{
-    height: 30%;
-    width: 5%;
+    height: 25vh;
+    width: 3.4vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(17rem,7.3rem);
+    transform: translate(21.3vw,21.6vh);
 }
 .work #img9{
-    height: 7%;
-    width: auto;
+    height: 5.5vh;
+    width: 10vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(14rem,16.5rem);
+    transform: translate(16vw,46.5vh);
 }
 .work #img10{
-    height: 12%;
-    width: auto;
+    height: 11.2vh;
+    width: 2.5vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(23rem,15rem);
+    transform: translate(28.5vw,40vh);
 }
 .work #img11{
     height: 299.17px;
@@ -169,20 +162,20 @@ body{
     transform-origin: top left;
 }
 .work #img15{
-    height: 25%;
-    width: auto;
+    height: 23vh;
+    width: 6.3vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(31rem,8.9rem);
+    transform: translate(39vw,23.5vh);
 }
 .work #img16{
-    height: 20%;
-    width: auto;
+    height: 20vh;
+    width: 5.5vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(18.5rem,10.7rem);
+    transform: translate(22.7vw,26.5vh);
 }
 .work #img17{
     height: 20%;
@@ -216,20 +209,20 @@ body{
     transform-origin: top left;
 }
 .work #img20{
-    height: 12%;
-    width: auto;
+    height: 10vh;
+    width: 5vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(25rem,16rem);
+    transform: translate(34vw,44vh);
 }
 .work #img21{
-    height: 25%;
-    width: auto;
+    height: 25.5vh;
+    width: 8.3vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(23rem,9rem);
+    transform: translate(28.2vw,22vh);
 }
 .work #img22{
     height: 20%;
@@ -381,10 +374,10 @@ body{
 
 .container2{
     height: 88.8vh;
-    width: 35vw;
+    width: 32vw;
     border: 1px solid black;
-    margin-top: 6.8px;
-    margin-left: 5px;
+    margin-top: 1vh;
+    margin-left: 0.1vw;
 }
 .msg{
     height: 44.4vh;
@@ -400,11 +393,10 @@ body{
 }
 .starter{
     height: 44.4vh;
-    width: 31.79vw;
+    width: 31.87vw;
     background-color:wheat;
     position: absolute;
-    bottom: 0.38rem;
-    padding-top: 15px;
+    bottom: 1vh;
     display:grid;
     justify-content: space-around;
     align-items: center;
@@ -439,7 +431,6 @@ body{
 }
 #ins{
     margin: auto;
-    /* margin-top: 5vh; */
     color: #111;
     text-align: center;
     font-style:normal;
@@ -475,7 +466,6 @@ body{
 .tempSetter{
     height: 17rem;
     width: 15rem;
-    /* background-color: #fff; */
     font-size: 1.4rem;
     text-align: center;
     position: absolute;
