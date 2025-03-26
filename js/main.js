@@ -229,8 +229,8 @@ function gatherBcg(){
 
 // Going for Titration
 function goingfortitration2() {
-    if (currentStep !== "step7") return;
-    currentStep = "step8";
+    // if (currentStep !== "step7") return;
+    // currentStep = "step8";
 
     let flask = document.getElementById("img31");
     let msg = document.getElementById("text2");

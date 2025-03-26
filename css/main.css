@@ -228,14 +228,14 @@ body{
     transform: translate(28.2vw,22vh);
 }
 .work #img22{
-    height: 20%;
-    width: auto;
+    height: 17.9vh;
+    width: 4.6vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    top: 17rem;
-    left: 17rem;
-    transition: all 2s ease-in-out;
+    top: 46.5vh;
+    left: 21vw;
+    transition: transform 2s ease-in-out;
     transform-origin: top left;
 }
 @keyframes shake2 {
@@ -251,12 +251,12 @@ body{
 }
 
 .work #img23{
-    height: 22%;
-    width: 20%;
+    height: 20vh;
+    width: 15vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(40rem,15.6rem);
+    transform: translate(50vw,42.3vh);
 }
 .temp{
     height: 15px;
@@ -267,82 +267,91 @@ body{
     left: 47.5rem;
 }
 .work #img24{
-    height: 299.17;
-    width: 66.72;
+    height: 46vh;
+    width: 6.5vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(4rem,5.5rem);
+    top: 18.2vh;
+    left: 8vw;
+    transition: transform 2s ease-in-out;
+    transform-origin: top left;
 }
 .work #img25{
-    height: 209.41px;
-    width: 14.83px;
+    height: 40vh;
+    width: 1vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(5.8rem,3rem);
+    top: 7.4vh;
+    left: 11vw;
+    transition: transform 2s ease-in-out;
+    transform-origin: top left;
 }
 .work #img26{
-    height: 30%;
-    width: 5%;
+    height: 27vh;
+    width: 3.5vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    top: 13.7rem;
-    left: 22.5rem;
-    transition: all 2s ease-in-out;
+    top: 37vh;
+    left: 28vw;
+    transition: transform 2s ease-in-out;
     transform-origin: top left;
 }
 .work #img27{
-    height: 7%;
-    width: auto;
+    height: 6vh;
+    width: 9.3vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    top: 23rem;
-    left: 23rem;
-    transition: all 2s ease-in-out;
+    top: 63.3vh;
+    left: 28.3vw;
+    transition: transform 2s ease-in-out;
     transform-origin: top left;
 }
 .work #img28{
-    height: 12%;
-    width: auto;
+    height: 11vh;
+    width: 2.5vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    transform: translate(24rem,18.5rem);
+    top:53vh;
+    left: 34vw;
+    transition: transform 2s ease-in-out;
+    transform-origin: top-left;
 }
 .work #img29{
-    height: 12%;
-    width: auto;
+    height: 10vh;
+    width: 5vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    top: 20.3rem;
-    left: 30.5rem;
-    transition: all 2s ease-in-out;
+    top: 56vh;
+    left: 37vw;
+    transition: transform 2s ease-in-out;
     transform-origin: top left;
 }
 .work #img30{
-    height: 25%;
-    width: auto;
+    height: 22vh;
+    width: 8vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    top: 15.5rem;
-    left: 34rem;
-    transition: all 2s ease-in-out;
+    top: 42.5vh;
+    left: 42vw;
+    transition: transform 2s ease-in-out;
     transform-origin: top left;
 }
 .work #img31{
-    height: 20%;
-    width: auto;
+    height: 17.9vh;
+    width: 4.6vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    top: 17rem;
-    left: 11.5rem;
-    transition: all 2s ease-in-out;
+    top: 46.5vh;
+    left: 15vw;
+    transition: transform 2s ease-in-out;
     transform-origin: top left;
 }
 .shake3 {
@@ -356,14 +365,14 @@ body{
     100% { transform: translateX(-75px) translateY(-15px) rotate(0deg); }
 }
 .work #img32{
-    height: 7%;
-    width: auto;
+    height: 6vh;
+    width: 9.3vw;
     color: #fff;
     background: transparent;
     position: absolute;
-    top: 24.3rem;
-    left: 28rem;
-    transition: all 2s ease-in-out;
+    top: 66.5vh;
+    left: 34vw;
+    transition: transform 2s ease-in-out;
     transform-origin: top left;
 }
 .water {
