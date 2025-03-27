@@ -42,14 +42,6 @@ body{
     width: 100%;
     position: absolute;
 }
-.work #img2{
-    height: 22%;
-    width: 8%;
-    color: #fff;
-    background: transparent;
-    position: absolute;
-    transform: translate(25rem,9.8rem);
-}
 .work #img3{
     height: 100%;
     width: 100%;
@@ -135,21 +127,22 @@ body{
     position: absolute;
     left: 25vw;
     top: 47vh;
-    transition: transform 2s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     transform-origin: top left;
-    transform: translateX(0) translateY(0);
 }
 
+@keyframes shake {
+    0% { transform: translateX(-10.8vw) translateY(-1vh) rotate(0deg); }
+    25% { transform: translateX(-10.8vw) translateY(-1vh) rotate(-2deg); }
+    50% { transform: translateX(-10.8vw) translateY(-1vh) rotate(2deg); }
+    75% { transform: translateX(-10.8vw) translateY(-1vh) rotate(-2deg); }
+    100% { transform: translateX(-10.8vw) translateY(-1vh) rotate(0deg); }
+}
 .shake {
     animation: shake 0.5s infinite linear alternate;
 }
-@keyframes shake {
-    0% { transform: translateX(-138px) translateY(-7px) rotate(0deg); }
-    25% { transform: translateX(-138px) translateY(-7px) rotate(-2deg); }
-    50% { transform: translateX(-138px) translateY(-7px) rotate(2deg); }
-    75% { transform: translateX(-138px) translateY(-7px) rotate(-2deg); }
-    100% { transform: translateX(-138px) translateY(-7px) rotate(0deg); }
-}
+
+
 .work #img14{
     height: 27vh;
     width: 6.5vw;
@@ -240,9 +233,9 @@ body{
 }
 @keyframes shake2 {
     0% { transform: translateX(0) rotate(0deg); }
-    25% { transform: translateX(-2px) rotate(-2deg); }
-    50% { transform: translateX(2px) rotate(2deg); }
-    75% { transform: translateX(-2px) rotate(-2deg); }
+    25% { transform: translateX(-0.2vw) rotate(-2deg); }
+    50% { transform: translateX(0.2vw) rotate(2deg); }
+    75% { transform: translateX(-0.2vw) rotate(-2deg); }
     100% { transform: translateX(0) rotate(0deg); }
 }
 
@@ -358,11 +351,11 @@ body{
     animation: shake3 0.5s infinite linear alternate;
 }
 @keyframes shake3 {
-    0% { transform: translateX(-75px) translateY(-15px) rotate(0deg); }
-    25% { transform: translateX(-75px) translateY(-15px) rotate(-2deg); }
-    50% { transform: translateX(-75px) translateY(-15px) rotate(2deg); }
-    75% { transform: translateX(-75px) translateY(-15px) rotate(-2deg); }
-    100% { transform: translateX(-75px) translateY(-15px) rotate(0deg); }
+    0% { transform: translateX(-5.9vw) translateY(-2.95vh) rotate(0deg); }
+    25% { transform: translateX(-5.9vw) translateY(-2.95vh) rotate(-2deg); }
+    50% { transform: translateX(-5.9vw) translateY(-2.95vh) rotate(2deg); }
+    75% { transform: translateX(-5.9vw) translateY(-2.95vh) rotate(-2deg); }
+    100% { transform: translateX(-5.9vw) translateY(-2.95vh) rotate(0deg); }
 }
 .work #img32{
     height: 6vh;
