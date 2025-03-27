@@ -33,7 +33,7 @@ body{
 }
 .work{
     height: 89vh;
-    width: 80vw;
+    width: 67.4vw;
     position: relative;
     margin-top: 1vh;
     margin-left: 3px;
@@ -389,21 +389,61 @@ body{
 }
 .msg{
     height: 44.4vh;
-    width: 32vw;
+    width: 31.87vw;
     background-color: grey;
+    position: absolute;
+    top: 10.3vh;
+    left: 68vw;
+    display:grid;
+    justify-content: space-around;
     border: 1px solid black;
+    box-shadow: 5px 5px 20px 1px grey;
 }
 .starter{
     height: 44vh;
     width: 31.87vw;
     background-color:wheat;
     position: absolute;
-    top: 54.8vh;
+    top: 55.1vh;
     left: 68vw;
     display:grid;
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    border: 1px solid black;
+    box-shadow: 5px 5px 20px 1px wheat;
+}
+#st_1{
+    position: absolute;
+    top: 3vh;
+    left: 3vw;
+}
+#st_2{
+    position: absolute;
+    top: 22vh;
+    left: 1vw;
+}
+#hcl-std{
+    height: 6vh;
+    width: 12vw;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:thistle;
+    position: absolute;
+    top: 11.5vh;
+    left: 10vw;
+}
+#main-exp{
+    height: 6vh;
+    width: 12vw;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: thistle;
+    position: absolute;
+    top: 31vh;
+    left: 10vw;
 }
 #message{
     height: 100%;
@@ -411,46 +451,30 @@ body{
     background-color: grey;
     padding-top: 2px;
 }
-#hcl-std{
-    height: 2rem;
-    width: 10rem;
-    margin-top: 4rem;
-    text-decoration: none;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color:thistle;
-    transform: translate(6rem,-3rem);
-}
 #hcl-std a{
     text-decoration: none;
 }
 
-#main-exp{
-    height: 2rem;
-    width: 10rem;
-    margin-bottom: 2rem;
-    text-decoration: none;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: thistle;
-    transform: translate(6rem,0rem);
-}
 #main-exp a{
     text-decoration: none;
 }
 #ins{
-    margin: auto;
     color: #111;
     text-align: center;
     font-style:normal;
     text-decoration: underline;
+    position:absolute;
+    top: 4vh;
+    left: 7vw;
 }
 #text{
-    text-align: center;
+    /* text-align: center; */
     font-size: 2.0vw;
     font-weight: 100;
     color:tan;
-    margin-top: 3rem;
+    position:absolute;
+    top: 16vh;
+    left: 2vw;
 }
 #text2{
     text-align: center;
