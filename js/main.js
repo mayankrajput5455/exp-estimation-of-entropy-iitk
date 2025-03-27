@@ -209,8 +209,8 @@ function gathersolution(){
 
 //Gathering Indicator
 function gatherBcg(){
-    // if (currentStep !== "step6") return;
-    // currentStep = "step7";
+    if (currentStep !== "step6") return;
+    currentStep = "step7";
     let pipette2 = document.getElementById("img32")
     let msg = document.getElementById("text2");
     
@@ -232,8 +232,8 @@ function gatherBcg(){
 
 // Going for Titration
 function goingfortitration2() {
-    // if (currentStep !== "step7") return;
-    // currentStep = "step8";
+    if (currentStep !== "step7") return;
+    currentStep = "step8";
 
     let flask = document.getElementById("img31");
     let msg = document.getElementById("text2");
