@@ -526,14 +526,16 @@ body{
     margin-top: 10vh;
 }
 #next{
-    height: 1.4rem;
-    width: 4rem;
+    height: 4vh;
+    width: 5vw;
     border: 1px solid black;
     border-radius: 10px;
-    font-size: 1rem;
     background-color:pink;
+    font-size: 3vh;
     color: #111;
-    transform: translate(43.6rem,30.5rem);
+    position: absolute;
+    top: 81vh;
+    left: 57vw;
 }
 #next a{
     text-decoration: none;
