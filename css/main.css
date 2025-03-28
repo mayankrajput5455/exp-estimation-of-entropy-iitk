@@ -541,14 +541,16 @@ body{
     text-decoration: none;
 }
 .tempSetter{
-    height: 17rem;
-    width: 15rem;
-    font-size: 1.4rem;
+    height: 46vh;
+    width: 15vw;
+    font-size: 4vh;
     text-align: center;
     position: absolute;
-    left: 60rem;
-    top: 19rem;
+    left: 78vw;
+    top: 53vh;
     visibility: hidden;
+    border: 1px solid black;
+    background-color: wheat;
 }
 .tempSetter button{
     display: inline-block;
