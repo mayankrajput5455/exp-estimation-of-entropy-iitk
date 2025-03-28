@@ -108,7 +108,7 @@ function pourborax() {
     currentStep = "step2";
 
     let borax = document.getElementById("img29");
-    let msg = document.getElementById("text2");
+    let msg = document.getElementById("text3");
 
     borax.style.transform = "translateX(-15.4vw) translateY(-15vh) rotate(-40deg)";
     msg.innerText = "Pouring 25g Borax into Flask...";
@@ -125,7 +125,7 @@ function pourwater() {
     currentStep = "step3";
 
     let beaker = document.getElementById("img30");
-    let msg = document.getElementById("text2");
+    let msg = document.getElementById("text3");
 
     beaker.style.transform = "translateX(-13vw) translateY(-9vh) rotate(-40deg)";
     msg.innerText = "Pouring Distilled water into Measuring Cylinder to measure 75ml...";
@@ -143,7 +143,7 @@ function pourbycylinder() {
     currentStep = "step4";
 
     let cyl = document.getElementById("img26");
-    let msg = document.getElementById("text2");
+    let msg = document.getElementById("text3");
 
     cyl.style.transform = "translateX(-4.5vw) translateY(10vh) rotate(-90deg)";
     msg.innerText = "Pouring from Measuring Cylinder into Flask...";
@@ -189,7 +189,7 @@ function gathersolution(){
     if (currentStep !== "step5") return;
     currentStep = "step6";
     let pipette2 = document.getElementById("img27");
-    let msg = document.getElementById("text2");
+    let msg = document.getElementById("text3");
     
     pipette2.style.transform = "translateX(-6.5vw) translateY(-14vh) rotate(-90deg)";
     msg.innerText = "Gathering Borax Solution...";
@@ -212,7 +212,7 @@ function gatherBcg(){
     if (currentStep !== "step6") return;
     currentStep = "step7";
     let pipette2 = document.getElementById("img32")
-    let msg = document.getElementById("text2");
+    let msg = document.getElementById("text3");
     
     pipette2.style.transform = "translateX(-0.4vw) translateY(-12vh) rotate(-90deg)";
     msg.innerText = "Gathering Bromo cresol Green Indicator...";
@@ -236,7 +236,7 @@ function goingfortitration2() {
     currentStep = "step8";
 
     let flask = document.getElementById("img31");
-    let msg = document.getElementById("text2");
+    let msg = document.getElementById("text3");
 
     flask.style.transition = "transform 3s ease-in-out";
     flask.style.transform = "translateX(-5.8vw) translateY(-2.85vh) rotate(0deg)";
@@ -263,7 +263,7 @@ function temp1() {
         }
         setTimeout(() => {
             flask.style.transform = "translateX(0) translateY(0)";
-            let msg = document.getElementById("text2");
+            let msg = document.getElementById("text3");
             msg.innerText = "Borax Solution is Heated, Now gather 5ml Borax Solution through Micropippet.";
         }, 5000);   
 }
@@ -277,7 +277,7 @@ function temp2() {
         }
         setTimeout(() => {
             flask.style.transform = "translateX(0) translateY(0)";
-            let msg = document.getElementById("text2");
+            let msg = document.getElementById("text3");
             msg.innerText = "Borax Solution is Heated, Now gather 5ml Borax Solution through Micropippet.";
         }, 5000);
     }
@@ -291,7 +291,7 @@ function temp2() {
         }
         setTimeout(() => {
             flask.style.transform = "translateX(0) translateY(0)";
-            let msg = document.getElementById("text2");
+            let msg = document.getElementById("text3");
             msg.innerText = "Borax Solution is Heated, Now gather 5ml Borax Solution through Micropippet.";
         }, 5000);
 }
@@ -305,7 +305,7 @@ function temp4() {
         }
         setTimeout(() => {
             flask.style.transform = "translateX(0) translateY(0)";
-            let msg = document.getElementById("text2");
+            let msg = document.getElementById("text3");
             msg.innerText = "Borax Solution is Heated, Now gather 5ml Borax Solution through Micropippet.";
         }, 5000);
 }
@@ -319,7 +319,7 @@ function temp5() {
         }
         setTimeout(() => {
             flask.style.transform = "translateX(0) translateY(0)";
-            let msg = document.getElementById("text2");
+            let msg = document.getElementById("text3");
             msg.innerText = "Borax Solution is Heated, Now gather 5ml Borax Solution through Micropippet.";
         }, 5000);
 }
