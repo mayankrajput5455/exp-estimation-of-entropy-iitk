@@ -271,7 +271,7 @@ body{
     width: 1.7vw;
     background-color: rgba(255, 166, 0, 0.819);
     position: absolute;
-    top: 58.75vh;
+    top: 58.24vh;
     left: 59.3vw;
 }
 .work #img24{
@@ -524,6 +524,9 @@ body{
     font-weight: 100;
     color: tan;
     margin-top: 10vh;
+}
+#pagetext{
+    visibility: hidden;
 }
 #next{
     height: 4vh;

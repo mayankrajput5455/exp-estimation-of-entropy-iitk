@@ -12,14 +12,12 @@ function speak(text) {
     text_speak.lang = "en-US";
     window.speechSynthesis.speak(text_speak);
 }
+let text = document.getElementById('text');
 
 function setMsg(msgElement, text) {
     msgElement.innerText = text;
     speak(text);
 }
-
-let firstSpeak = document.getElementById("text2");
-speak(firstSpeak.innerText);
 
 // 2.1: Pouring Na2Co3 to Measuring Cylinder
 
@@ -32,7 +30,7 @@ function pourbyNa2co3() {
     setMsg(msg, "Pouring Na2CO3 into Measuring Cylinder...");
     setTimeout(() => {
         bottle.style.transform = "translateX(0) translateY(0) rotate(0deg)";
-        setMsg(msg, "Now, Click on Measuring Cylinder to pour that 5ml Na2Co3 into conical Flask.");
+        setMsg(msg, "Now, Click on Measuring Cylinder to pour that 5ml Na2CO3 into conical Flask.");
     }, 3000);
 }
 
@@ -94,8 +92,8 @@ function goingfortitration() {
     }, 3000);
 }
 
-let secSpeak = document.getElementById("text3");
-speak(secSpeak.innerText);
+let thirdSpeak = document.getElementById("text3");
+speak(thirdSpeak.innerText);
 
 // 3.1: Pouring Borax to Flask
 
@@ -217,7 +215,7 @@ function goingfortitration2() {
         setTimeout(() => {
             flask.classList.remove("shake3");
             flask.style.transform = "translateX(0) translateY(0) rotate(0deg)";
-            setMsg(msg, "Titration completed. <br>Take the Reading and complete the calculation as well as experiment.");
+            setMsg(msg, "Titration completed. Take the Reading and complete the calculation.");
         }, 5000);
     }, 3000);
 }
