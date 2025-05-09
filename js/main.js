@@ -1,5 +1,6 @@
 let currentStep = "step1";
 let tempSetter = document.querySelector(".tempSetter");
+let head = document.querySelector(".head");
 let flask = document.getElementById("img22"); 
 let cylinder = document.getElementById("img14");
 // Speak Function
@@ -151,6 +152,7 @@ function goingtobath() {
             flask.style.transform = "translateX(34vw) translateY(-12vh)";
             setTimeout(() => {
                 if (tempSetter) tempSetter.style.visibility = "visible";
+                if (head) head.style.visibility = "visible";
             }, 3000);
         }, 100);
     }, 3000);
