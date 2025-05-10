@@ -525,9 +525,6 @@ body{
     color: tan;
     margin-top: 10vh;
 }
-#pagetext{
-    visibility: hidden;
-}
 #next{
     height: 4vh;
     width: 5vw;
