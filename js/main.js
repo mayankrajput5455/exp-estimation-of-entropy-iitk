@@ -139,7 +139,7 @@ function pourwater() {
     setMsg(msg, "Pouring Distilled water into Measuring Cylinder to measure 75ml...");
     setTimeout(() => {
         beaker.style.transform = "translateX(0) translateY(0) rotate(0deg)";
-        cyl.src = "/images/measuring-cylinder2.png";
+        cyl.src = "./images/measuring-cylinder2.png";
         setMsg(msg, "Now click on the measuring cylinder to pour that 75ml distilled water into the flask.");
     }, 3000);
 }
