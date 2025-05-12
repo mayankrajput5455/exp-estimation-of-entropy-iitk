@@ -99,13 +99,10 @@ function goingfortitration() {
             flask.classList.remove("shake");
             flask.style.transform = "translateX(0) translateY(0) rotate(0deg)";
             setMsg(msg, "Titration complete! Now click on the Next button to perform the main experiment.");
-            flask.src = "/images/conicalflask3.png"
+            flask.src = "./images/conicalflask3.png"
         }, 5000);
     }, 3000);
 }
-
-// let thirdSpeak = document.getElementById("text3");
-// speak(thirdSpeak.innerText);
 window.onload = function () {
     let thirdSpeak = document.getElementById("text3");
     if (thirdSpeak) {
@@ -155,7 +152,7 @@ function pourbycylinder() {
     setTimeout(() => {
         cyl.style.transform = "translateX(0) translateY(0) rotate(0deg)";
         flask.src = "./images/conicalflask2.png";
-        cyl.src = "/images/measuring-cylinder.png";
+        cyl.src = "./images/measuring-cylinder.png";
         setMsg(msg, "Now Click On the flask to mix the mixture for 10-15 minutes and take it in Temperature Bath and Set Temperature from Following and Wait for 10 minutes...");
     }, 3000);
 }
@@ -240,7 +237,7 @@ function goingfortitration2() {
         flask.classList.add("shake3");
         setTimeout(() => {
             flask.classList.remove("shake3");
-            flask.src = "/images/conicalflask3.png";
+            flask.src = "./images/conicalflask3.png";
             flask.style.transform = "translateX(0) translateY(0) rotate(0deg)";
             setMsg(msg, "Titration completed. Take the Reading and complete the calculation.");
         }, 5000);
