@@ -139,7 +139,7 @@ function pourwater() {
     setMsg(msg, "Pouring Distilled water into Measuring Cylinder to measure 75ml...");
     setTimeout(() => {
         beaker.style.transform = "translateX(0) translateY(0) rotate(0deg)";
-        cyl.src = "./images/measuring-cylinder2.png";
+        // cyl.src = "./images/measuring-cylinder2.png";
         setMsg(msg, "Now click on the measuring cylinder to pour that 75ml distilled water into the flask.");
     }, 3000);
 }
@@ -155,7 +155,7 @@ function pourbycylinder() {
     setTimeout(() => {
         cyl.style.transform = "translateX(0) translateY(0) rotate(0deg)";
         flask.src = "./images/conicalflask2.png";
-        cyl.src = "/images/measuring-cylinder.png";
+        // cyl.src = "/images/measuring-cylinder.png";
         setMsg(msg, "Now Click On the flask to mix the mixture for 10-15 minutes and take it in Temperature Bath and Set Temperature from Following and Wait for 10 minutes...");
     }, 3000);
 }
