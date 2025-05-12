@@ -2,7 +2,9 @@ let currentStep = "step1";
 let tempSetter = document.querySelector(".tempSetter");
 let head = document.querySelector(".head");
 let flask = document.getElementById("img22"); 
+let conicalflask = document.getElementById("img13"); 
 let cylinder = document.getElementById("img14");
+let cyl = document.getElementById("img26");
 
 // Speak Function
 function speak(text) {
@@ -53,6 +55,7 @@ function pourbymeasuringCylinder() {
     setMsg(msg, "Pouring from Measuring Cylinder into Flask...");
     setTimeout(() => {
         cylinder.style.transform = "translateX(0) translateY(0) rotate(0deg)";
+        conicalflask.src = "./images/conicalflask2.png";
         setMsg(msg, "Now, Click on Micropipette to gather 3 drops of Bromo Cresol Green Indicator");
     }, 3000);
 }
@@ -96,6 +99,7 @@ function goingfortitration() {
             flask.classList.remove("shake");
             flask.style.transform = "translateX(0) translateY(0) rotate(0deg)";
             setMsg(msg, "Titration complete! Now click on the Next button to perform the main experiment.");
+            flask.src = "/images/conicalflask3.png"
         }, 5000);
     }, 3000);
 }
@@ -135,6 +139,7 @@ function pourwater() {
     setMsg(msg, "Pouring Distilled water into Measuring Cylinder to measure 75ml...");
     setTimeout(() => {
         beaker.style.transform = "translateX(0) translateY(0) rotate(0deg)";
+        cyl.src = "/images/measuring-cylinder2.png";
         setMsg(msg, "Now click on the measuring cylinder to pour that 75ml distilled water into the flask.");
     }, 3000);
 }
@@ -149,6 +154,8 @@ function pourbycylinder() {
     setMsg(msg, "Pouring from Measuring Cylinder into Flask...");
     setTimeout(() => {
         cyl.style.transform = "translateX(0) translateY(0) rotate(0deg)";
+        flask.src = "./images/conicalflask2.png";
+        cyl.src = "/images/measuring-cylinder.png";
         setMsg(msg, "Now Click On the flask to mix the mixture for 10-15 minutes and take it in Temperature Bath and Set Temperature from Following and Wait for 10 minutes...");
     }, 3000);
 }
@@ -178,16 +185,19 @@ function gathersolution() {
     if (currentStep !== "step5") return;
     currentStep = "step6";
     let pipette2 = document.getElementById("img27");
+    let titrationflask = document.getElementById("img31");
     let msg = document.getElementById("text3");
     pipette2.style.transform = "translateX(-6.5vw) translateY(-14vh) rotate(-90deg)";
     setMsg(msg, "Gathering Borax Solution...");
     setTimeout(() => {
         setMsg(msg, "Click Again on micropippet to release the Borax Solution on Titration Flask.");
-    }, 1700);
+        flask.src = "./images/conical flask.png";
+    }, 2500);
     pipette2.addEventListener("click", () => {
         setTimeout(() => {
             pipette2.style.transform = "translateX(-12.5vw) translateY(-14vh) rotate(-90deg)";
             setTimeout(() => {
+                titrationflask.src = "./images/conicalflask2.png";
                 pipette2.style.transform = "translateX(0) translateY(0) rotate(0deg)";
                 setMsg(msg, "Borax Solution added to titration flask. Now Add Bromo Cresol Green Indicator by clicking on another Pippet on right next.");
             }, 3000);
@@ -230,6 +240,7 @@ function goingfortitration2() {
         flask.classList.add("shake3");
         setTimeout(() => {
             flask.classList.remove("shake3");
+            flask.src = "/images/conicalflask3.png";
             flask.style.transform = "translateX(0) translateY(0) rotate(0deg)";
             setMsg(msg, "Titration completed. Take the Reading and complete the calculation.");
         }, 5000);
