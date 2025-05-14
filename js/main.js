@@ -36,10 +36,11 @@ function pourbyNa2co3() {
     currentStep = "step2";
     let bottle = document.getElementById("img17");
     let msg = document.getElementById("text3");
-    bottle.style.transform = "translateX(-13.8vw) translateY(-4vh) rotate(-60deg)";
+    bottle.style.transform = "translateX(-13.8vw) translateY(-8vh) rotate(-60deg)";
     setMsg(msg, "Pouring Na2CO3 into Measuring Cylinder...");
     setTimeout(() => {
         bottle.style.transform = "translateX(0) translateY(0) rotate(0deg)";
+        cylinder.src = "./images/measuring-cylinder4.png";
         setMsg(msg, "Now, Click on Measuring Cylinder to pour that 5ml Na2CO3 into conical Flask.");
     }, 3000);
 }

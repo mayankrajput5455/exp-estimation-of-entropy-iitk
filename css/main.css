@@ -165,7 +165,7 @@ body{
     background: transparent;
     position: absolute;
     left: 33.5vw;
-    top: 42vh;
+    top: 40vh;
     transition: transform 2s ease-in-out;
     transform-origin: top left;
     transform: translateX(0) translateY(0);
