@@ -98,8 +98,8 @@ function goingfortitration() {
         flask.classList.add("shake");
         setTimeout(() => {
             flask.classList.remove("shake");
-            flask.style.transform = "translateX(0) translateY(0) rotate(0deg)";
             flask.src = "./images/conicalflask3.png"
+            flask.style.transform = "translateX(0) translateY(0) rotate(0deg)";
             setMsg(msg, "Titration complete! Now click on the Next button to perform the main experiment.");
         }, 5000);
     }, 3000);
