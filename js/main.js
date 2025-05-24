@@ -56,6 +56,7 @@ function pourbymeasuringCylinder() {
     setMsg(msg, "Pouring from Measuring Cylinder into Flask...");
     setTimeout(() => {
         cylinder.style.transform = "translateX(0) translateY(0) rotate(0deg)";
+        cylinder.src = "./images/measuring-cylinder3.png";
         conicalflask.src = "./images/conicalflask2.png";
         setMsg(msg, "Now, Click on Micropipette to gather 3 drops of Bromo Cresol Green Indicator");
     }, 3000);
@@ -164,12 +165,14 @@ function goingtobath() {
     currentStep = "step5";
     let flask = document.getElementById("img22");
     flask.classList.add("shake2");
+    let msg = document.getElementById("text3");
     setTimeout(() => {
         flask.classList.remove("shake2");
         setTimeout(() => {
             flask.style.transition = "transform 3s ease-in-out";
             flask.style.transform = "translateX(34vw) translateY(-12vh)";
             setTimeout(() => {
+                msg.style.visibility = "hidden";
                 if (tempSetter) tempSetter.style.visibility = "visible";
                 if (head) head.style.visibility = "visible";
             }, 3000);
@@ -240,7 +243,9 @@ function goingfortitration2() {
             flask.classList.remove("shake3");
             flask.src = "./images/conicalflask3.png";
             flask.style.transform = "translateX(0) translateY(0) rotate(0deg)";
-            setMsg(msg, "Titration completed. Take the Reading and complete the calculation.");
+            setTimeout(()=>{setMsg(msg, "Thank You!");
+            },2000); 
+            setMsg(msg, "Titration completed");
         }, 5000);
     }, 3000);
 }
@@ -248,51 +253,66 @@ function goingfortitration2() {
 // Tempsetter
 
 function temp1() {
+    let msg = document.getElementById("text3");
     document.querySelector(".temp").innerHTML = "<h6>20<sup>o</sup>C</h6>";
     if (tempSetter) setTimeout(() => tempSetter.style.visibility = "hidden", 1000);
     if (head) setTimeout(() => head.style.visibility = "hidden", 1000);
+    setMsg(msg, "Wait for 10 minutes...");
+    setTimeout(() => msg.style.visibility = "visible", 1000);
     setTimeout(() => {
         flask.style.transform = "translateX(0) translateY(0)";
-        setMsg(document.getElementById("text3"), "Borax Solution is Heated, Now gather 5ml Borax Solution through Micropippet.");
+        setMsg(document.getElementById("text3"), "Borax Solution is Heated, Now gather 5ml Borax Solution through left Micropippet.");
     }, 5000);
 }
 
 function temp2() {
+    let msg = document.getElementById("text3");
     document.querySelector(".temp").innerHTML = "<h6>30<sup>o</sup>C</h6>";
     if (tempSetter) setTimeout(() => tempSetter.style.visibility = "hidden", 1000);
     if (head) setTimeout(() => head.style.visibility = "hidden", 1000);
+    setMsg(msg, "Wait for 10 minutes...");
+    setTimeout(() => msg.style.visibility = "visible", 1000);
     setTimeout(() => {
         flask.style.transform = "translateX(0) translateY(0)";
-        setMsg(document.getElementById("text3"), "Borax Solution is Heated, Now gather 5ml Borax Solution through Micropippet.");
+        setMsg(document.getElementById("text3"), "Borax Solution is Heated, Now gather 5ml Borax Solution through left Micropippet.");
     }, 5000);
 }
 
 function temp3() {
+    let msg = document.getElementById("text3");
     document.querySelector(".temp").innerHTML = "<h6>40<sup>o</sup>C</h6>";
     if (tempSetter) setTimeout(() => tempSetter.style.visibility = "hidden", 1000);
     if (head) setTimeout(() => head.style.visibility = "hidden", 1000);
+    setMsg(msg, "Wait for 10 minutes...");
+    setTimeout(() => msg.style.visibility = "visible", 1000);
     setTimeout(() => {
         flask.style.transform = "translateX(0) translateY(0)";
-        setMsg(document.getElementById("text3"), "Borax Solution is Heated, Now gather 5ml Borax Solution through Micropippet.");
+        setMsg(document.getElementById("text3"), "Borax Solution is Heated, Now gather 5ml Borax Solution through left Micropippet.");
     }, 5000);
 }
 
 function temp4() {
+    let msg = document.getElementById("text3");
     document.querySelector(".temp").innerHTML = "<h6>50<sup>o</sup>C</h6>";
     if (tempSetter) setTimeout(() => tempSetter.style.visibility = "hidden", 1000);
     if (head) setTimeout(() => head.style.visibility = "hidden", 1000);
+    setMsg(msg, "Wait for 10 minutes...");
+    setTimeout(() => msg.style.visibility = "visible", 1000);
     setTimeout(() => {
         flask.style.transform = "translateX(0) translateY(0)";
-        setMsg(document.getElementById("text3"), "Borax Solution is Heated, Now gather 5ml Borax Solution through Micropippet.");
+        setMsg(document.getElementById("text3"), "Borax Solution is Heated, Now gather 5ml Borax Solution through left Micropippet.");
     }, 5000);
 }
 
 function temp5() {
+    let msg = document.getElementById("text3");
     document.querySelector(".temp").innerHTML = "<h6>60<sup>o</sup>C</h6>";
     if (tempSetter) setTimeout(() => tempSetter.style.visibility = "hidden", 1000);
     if (head) setTimeout(() => head.style.visibility = "hidden", 1000);
+    setMsg(msg, "Wait for 10 minutes...");
+    setTimeout(() => msg.style.visibility = "visible", 1000);
     setTimeout(() => {
         flask.style.transform = "translateX(0) translateY(0)";
-        setMsg(document.getElementById("text3"), "Borax Solution is Heated, Now gather 5ml Borax Solution through Micropippet.");
+        setMsg(document.getElementById("text3"), "Borax Solution is Heated, Now gather 5ml Borax Solution through left Micropippet.");
     }, 5000);
 }
