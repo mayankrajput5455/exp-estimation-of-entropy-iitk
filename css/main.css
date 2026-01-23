@@ -31,16 +31,17 @@ body{
     background-color:darkgray;
     display: flex;
 }
-#container{
-    height: 90.8vh;
-    width: 99.9vw;
-    background-color:darkgray;
-    display: flex;
-
-}
 .work{
     height: 89vh;
     width: 67.4vw;
+    position: relative;
+    margin-top: 1vh;
+    margin-left: 3px;
+    border: 1px solid black;
+}
+#work{
+    height: 89vh;
+    width: 71.3vw;
     position: relative;
     margin-top: 1vh;
     margin-left: 3px;
@@ -58,7 +59,7 @@ body{
 }
 .work #img3{
     height: 88.8vh;
-    width: 70.8vw;
+    width: 69vw;
     position: absolute;
 }
 .work #img4{
@@ -132,6 +133,7 @@ body{
     background: transparent;
     position: absolute;
     transform: translate(15.5vw,5vh);
+    z-index: 100;
 }
 .work #img13 {
     height: 19.5vh;
@@ -265,6 +267,14 @@ body{
     position: absolute;
     transform: translate(50vw,42.3vh);
 }
+.temp{
+    height: 2.7vh;
+    width: 1.7vw;
+    background-color: rgba(255, 166, 0, 0.819);
+    position: absolute;
+    top: 58.24vh;
+    left: 59.3vw;
+}
 .work #img24{
     height: 46vh;
     width: 6.5vw;
@@ -353,16 +363,19 @@ body{
     transition: transform 2s ease-in-out;
     transform-origin: top left;
 }
-.shake3 {
-    animation: shake3 0.5s infinite linear alternate;
-}
 @keyframes shake3 {
-    0% { transform: translateX(-5.9vw) translateY(-2.95vh) rotate(0deg); }
-    25% { transform: translateX(-5.9vw) translateY(-2.95vh) rotate(-2deg); }
-    50% { transform: translateX(-5.9vw) translateY(-2.95vh) rotate(2deg); }
-    75% { transform: translateX(-5.9vw) translateY(-2.95vh) rotate(-2deg); }
-    100% { transform: translateX(-5.9vw) translateY(-2.95vh) rotate(0deg); }
+    0% { rotate: 0deg; }
+    25% { rotate: -2deg; }
+    50% { rotate: 2deg; }
+    75% { rotate: -2deg; }
+    100% { rotate: 0deg; }
 }
+
+.shake3 {
+    animation: shake3 0.4s infinite;
+    transform-origin: center;
+}
+
 .work #img32{
     height: 6vh;
     width: 9.3vw;
@@ -450,22 +463,16 @@ body{
     left: 68vw;
     border: 1px solid black;
 }
-#work{
-    height: 89vh;
-    width: 71vw;
-    position: relative;
-    margin-top: 1vh;
-    margin-left: 3px;
-    border: 1px solid black;
-}
 #message2{
-    height: 89vh;
-    width: 28vw;
+    height: 89.1vh;
+    width: 31vw;
     background-color: grey;
     border: 1px solid black;
     margin-top: 1vh;
     margin-left: 0.5vw;
-    overflow: none;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; 
 }
 #hcl-std a{
     text-decoration: none;
@@ -503,17 +510,16 @@ body{
     text-align: center;
     font-size: 2.0vw;
     font-weight: 100;
-    color:orange;
+    color:tan;
     position:absolute;
     top: 16vh;
     left: 2vw;
-    
 }
 #text2{
     text-align: center;
     font-size: 2.0vw;
     font-weight: 100;
-    color: orange;
+    color: tan;
     position:absolute;
     top: 20vh;
     left: 2vw;
@@ -522,7 +528,7 @@ body{
     text-align: center;
     font-size: 2.0vw;
     font-weight: 100;
-    color: orange;
+    color: tan;
     margin-top: 15vh;
 }
 #next{
@@ -547,34 +553,119 @@ body{
     text-align: center;
     position: absolute;
     left: 78vw;
-    top: 40vh;
+    top: 63vh;
     visibility: hidden;
     border: 1px solid black;
     background-color: wheat;
-    overflow: hidden;
 }
 
 .head{
     font-size: 5vh;
     position: absolute;
-    left: 75vw;
-    top: 28vh;
+    left: 74vw;
+    top: 55vh;
     visibility: hidden;
-    text-decoration: underline;
 }
 .tempSetter button{
     display: inline-block;
     height: 5vh;
     width: 6vw;
     margin: 1vh;
-    border-radius: 1vh;
+    border-radius: 10px;
     background-color: aqua;
 }
-.temp{
-    height: 2.7vh;
-    width: 1.7vw;
-    background-color: rgba(255, 166, 0, 0.819);
-    position: absolute;
-    top: 58.3vh;
-    left: 59.3vw;
+
+#resultBox{
+    width: 90%;
+    background-color: #fff8dc;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px auto;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+    display: none;
+}
+
+#resultBox h3{
+    text-align: center;
+    color: darkblue;
+    text-decoration: underline;
+    margin-bottom: 8px;
+    font-size: 1.3vw;
+}
+
+#resultText{
+    font-size: 1.1vw;
+    color: #111;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.obsBlock{
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 8px;
+    font-size: 1.1vw;
+}
+
+#nextSetBtn{
+    width: 80%;
+    height: 5vh;
+    margin: 12px auto;
+    display: block;
+    font-size: 1.2vw;
+    border-radius: 8px;
+    background-color: #7CFC00;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+#graphContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+#thermoResult {
+    margin-top: 20px;
+    font-size: 1.3vw;
+    font-weight: bold;
+    background: #fff8dc;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 12px;
+    display: inline-block;
+}
+
+.resultSection {
+    display: none;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.resultGraphs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.resultGraphs canvas {
+    max-width: 100%;
+    background: #ffffff;
+    border: 2px solid #333;
+    border-radius: 6px;
+}
+
+#panelTitle {
+    color: #111;
+    text-align: center;
+    font-style: normal;
+    text-decoration: underline;
+    margin-top: 10px;
 }
