@@ -8,7 +8,7 @@
 	<div class="heading">
 		<h1>Estimation of entropy and free energy change of a reaction</h1>
 	</div>
-	<div class="" id="container">
+	<div class="container">
 		<div class="work" id="work">
 			<img id="img3" src="./images/bg2.png">
 			<!-- <button title="Temperature Bath"><img id="img23" src="/experiment/simulation/images/Temp_Bath.png"></button> -->
@@ -43,8 +43,12 @@
 			
         </div>
 		<div class="message2" id="message2">
-			<h1 id="ins2">INSTRUCTION</h1>
+			<h1 id="panelTitle">INSTRUCTION</h1>
 			<h1 id="text3">To start the main experiment <br>First Click on Plate of Borax powder To pour 25g of Borax Powder into the flask.</h1>	
+			<div id="resultBox">
+    			<h3>Observation</h3>
+    			<p id="resultText"></p>
+				</div>
 			<div class="head">
 				<h3>Set Temperature</h3>
 			</div>
@@ -65,7 +69,25 @@
 					<button onclick="temp5()">Temp 60<sup>o</sup>C</button>
 				</div>	
 			</div>
+			
+			<div id="resultBox" style="margin-top:20px; padding:10px; background:#fff; border:1px solid black; display:none;">
+				<h3>Observation</h3>
+				<div id="resultText"></div>
+			</div>
+			<div id="resultSection" class="resultSection">
+
+				<div class="resultGraphs">
+					<canvas id="lnkspPlot" width="300" height="200"></canvas>
+					<canvas id="kspPlot" width="300" height="200"></canvas>
+				</div>
+
+				<div id="thermoResult" class="thermoBox"></div>
+
+			</div>
+
 		</div>
+
+
     </div>
 	<script src="./js/main.js"></script>
 </body>
