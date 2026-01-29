@@ -73,23 +73,51 @@ function pourbymeasuringCylinder() {
 function pourbymicropippet() {
     if (currentStep !== "step3") return;
     currentStep = "step4";
+
     let pipette = document.getElementById("img19");
+    let cap = document.getElementById("cap");
+    let bottle = document.getElementById("img18");
     let msg = document.getElementById("text3");
-    pipette.style.transform = "translateX(-4.1vw) translateY(-6vh) rotate(-90deg)";
-    setMsg(msg, "Gathering indicator...");
+
+    cap.classList.add("cap-open");
+    bottle.classList.add("bottle-open");
+
+    pipette.style.transform =
+        "translateX(-4.1vw) translateY(-6vh) rotate(-90deg)";
+    setMsg(msg, "Opening indicator bottle and gathering indicator...");
+
     setTimeout(() => {
-        setMsg(msg, "Click Again on micropippet to release 3 drops of Bromo Cresol Green into the Flask.");
+        setMsg(
+            msg,
+            "Click again on Micropipette to release 3 drops of indicator into the flask."
+        );
     }, 1700);
-    pipette.addEventListener("click", () => {
-        setTimeout(() => {
-            pipette.style.transform = "translateX(-21.2vw) translateY(-15vh) rotate(-90deg)";
+
+    pipette.addEventListener(
+        "click",
+        () => {
             setTimeout(() => {
-                pipette.style.transform = "translateX(0) translateY(0) rotate(0deg)";
-                setMsg(msg, "Indicator added successfully! Now click on the flask for titration.");
-            }, 3000);
-        }, 50);
-    }, { once: true });
+                pipette.style.transform =
+                    "translateX(-21.2vw) translateY(-15vh) rotate(-90deg)";
+
+                setTimeout(() => {
+                    pipette.style.transform =
+                        "translateX(0) translateY(0) rotate(0deg)";
+
+                    cap.classList.remove("cap-open");
+                    bottle.classList.remove("bottle-open");
+
+                    setMsg(
+                        msg,
+                        "Indicator added successfully! Now click on the flask for titration."
+                    );
+                }, 3000);
+            }, 50);
+        },
+        { once: true }
+    );
 }
+
 
 // 2.4: Going For Titration
 
@@ -191,41 +219,46 @@ function goingtobath() {
 function gathersolution() {
     if (currentStep !== "step5") return;
 
-    let pipette2 = document.getElementById("img27");
+    let pipette2 = document.getElementById("img27");     
     let titrationflask = document.getElementById("img31");
-    let mainFlask = document.getElementById("img22"); // ✅ ADD THIS
+    let mainFlask = document.getElementById("img22");
     let msg = document.getElementById("text3");
 
     let stage = 0;
 
+    pipette2.onclick = null;
+    pipette2.style.transform = "translateX(0) translateY(0) rotate(0deg)";
+
     pipette2.onclick = function () {
 
-        // STEP 1: Gather solution
         if (stage === 0) {
+
             pipette2.style.transform =
                 "translateX(-6.5vw) translateY(-14vh) rotate(-90deg)";
-            setMsg(msg, "Gathering Borax Solution...");
+
+            setMsg(msg, "Gathering 5 ml Borax solution...");
+
             stage = 1;
             return;
         }
 
-        // STEP 2: Release into titration flask
         if (stage === 1) {
+
             pipette2.style.transform =
                 "translateX(-12.5vw) translateY(-14vh) rotate(-90deg)";
 
+            setMsg(msg, "Transferring Borax solution to titration flask...");
+
             setTimeout(() => {
-                // ✅ Fill titration flask
+
                 titrationflask.src = "./images/conicalflask2.png";
 
-                // ✅ EMPTY main flask (THIS WAS MISSING)
                 mainFlask.src = "./images/conical flask.png";
 
                 pipette2.style.transform =
                     "translateX(0) translateY(0) rotate(0deg)";
 
                 currentStep = "step6";
-                gatherBcg();
 
                 setMsg(
                     msg,
@@ -233,51 +266,80 @@ function gathersolution() {
                 );
 
                 pipette2.onclick = null;
+
+                gatherBcg();
+
             }, 2500);
         }
     };
 }
+
 
 
 
 // 3.6: Gathering Indicator
+
 function gatherBcg() {
     if (currentStep !== "step6") return;
 
-    currentStep = "step7";
-
     let pipette = document.getElementById("img32");
+    let cap = document.getElementById("cap2");
+    let bottle = document.getElementById("img28");
     let msg = document.getElementById("text3");
 
     let stage = 0;
 
+    pipette.style.transform = "translateX(0) translateY(0) rotate(0deg)";
+    pipette.onclick = null;
+
     pipette.onclick = function () {
 
-        // STEP 1: Gather indicator
         if (stage === 0) {
+            cap.classList.add("cap-open");
+            bottle.classList.add("bottle-open");
+
             pipette.style.transform =
                 "translateX(-0.4vw) translateY(-12vh) rotate(-90deg)";
-            setMsg(msg, "Gathering Bromo Cresol Green indicator...");
+
+            setMsg(
+                msg,
+                "Opening indicator bottle and collecting Bromo Cresol Green..."
+            );
+
             stage = 1;
             return;
         }
 
-        // STEP 2: Add to flask
         if (stage === 1) {
+
             pipette.style.transform =
                 "translateX(-18.3vw) translateY(-17vh) rotate(-90deg)";
+
             setMsg(msg, "Adding indicator to titration flask...");
 
             setTimeout(() => {
+
                 pipette.style.transform =
                     "translateX(0) translateY(0) rotate(0deg)";
-                setMsg(msg, "Indicator added. Now click on the flask for titration.");
-            }, 2500);
 
-            pipette.onclick = null; // 🔒 immediately lock
+                cap.classList.remove("cap-open");
+                bottle.classList.remove("bottle-open");
+
+                currentStep = "step7";
+
+                setMsg(
+                    msg,
+                    "Indicator added successfully! Now click on the flask for titration."
+                );
+
+                pipette.onclick = null;
+
+            }, 2500);
         }
     };
 }
+
+
 
 
 
@@ -291,7 +353,6 @@ function goingfortitration2() {
     let flask = document.getElementById("img31");
     let msg = document.getElementById("text3");
 
-    // Move flask to burette position
     flask.style.transition = "transform 3s ease-in-out";
     flask.style.transform = "translateX(-5.8vw) translateY(-2.85vh)";
 
@@ -300,12 +361,10 @@ function goingfortitration2() {
         "Starting Titration... Shake the flask and mix with standard HCl until color changes to yellow."
     );
 
-    // START SHAKING after flask reaches burette
     setTimeout(() => {
         flask.classList.add("shake3");
     }, 3000);
 
-    // STOP SHAKING + color change + return flask
     setTimeout(() => {
         flask.classList.remove("shake3");
         flask.src = "./images/conicalflask3.png";
@@ -321,7 +380,7 @@ function goingfortitration2() {
         showKspResult(selectedTemp);
         currentSet++;
 
-    }, 8000); // 3s move + 5s shake
+    }, 8000); 
 }
 
 
@@ -412,7 +471,6 @@ function showKspResult(temp) {
     const data = kspData[temp];
     if (!data) return;
 
-    // 🔥 STORE ALL OBSERVATIONS (never deleted)
     observations.push({
         set: `SET-${String.fromCharCode(64 + currentSet)}`,
         temperature: temp,
@@ -421,10 +479,8 @@ function showKspResult(temp) {
         lnKsp: data.lnKsp
     });
 
-    // 🔥 CLEAR UI (show only current SET)
     resultText.innerHTML = "";
 
-    // Current observation only
     const obs = observations[observations.length - 1];
 
     const obsDiv = document.createElement("div");
@@ -440,21 +496,17 @@ function showKspResult(temp) {
     resultText.appendChild(obsDiv);
     resultBox.style.display = "block";
 
-    // 🔥 REMOVE OLD BUTTON
     const oldBtn = document.getElementById("nextSetBtn");
     if (oldBtn) oldBtn.remove();
 
-    // 🔥 CREATE NEW BUTTON
     const nextBtn = document.createElement("button");
     nextBtn.id = "nextSetBtn";
 
     if (currentSet < 3) {
-        // SET-A → SET-B, SET-B → SET-C
         nextBtn.innerText =
             `SET-${String.fromCharCode(64 + currentSet + 1)} (Next Temperature)`;
         nextBtn.onclick = resetForNextSet;
     } else {
-        // 🔥 AFTER SET-C
         nextBtn.innerText = "Get the Result";
         nextBtn.onclick = showFinalResult;
     }
