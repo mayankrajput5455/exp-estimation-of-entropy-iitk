@@ -118,6 +118,14 @@ body{
     position: absolute;
     transform: translate(28.5vw,40vh);
 }
+.work #cap3{
+    height: 11.2vh;
+    width: 2.5vw;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    transform: translate(28.5vw,36.5vh);
+}
 .work #img11{
     height: 53vh;
     width: 7vw;
@@ -207,6 +215,15 @@ body{
     position: absolute;
     left: 43.7vw;
     top: 57.1vh;
+}
+.work #cap{
+    height: 10vh;
+    width: 2.3vw;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    left: 43.7vw;
+    top: 54vh;
 }
 .work #img19{
     height: 5.5vh;
@@ -330,6 +347,17 @@ body{
     transition: transform 2s ease-in-out;
     transform-origin: top-left;
 }
+.work #cap2{
+    height: 11vh;
+    width: 2.5vw;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    top:49.5vh;
+    left: 34vw;
+    transition: transform 2s ease-in-out;
+    transform-origin: top-left;
+}
 .work #img29{
     height: 10vh;
     width: 5vw;
@@ -441,6 +469,14 @@ body{
     position: absolute;
     top: 11.5vh;
     left: 10vw;
+}
+.cap-open {
+    transform: translateX(3vw) translateY(-1vh) rotate(25deg);
+    transition: transform 0.8s ease-in-out;
+}
+
+.bottle-open {
+    filter: brightness(1.1);
 }
 #main-exp{
     height: 6vh;
@@ -669,3 +705,4 @@ body{
     text-decoration: underline;
     margin-top: 10px;
 }
+
